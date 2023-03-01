@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Toma",
+    "age": 22,
+    "mobile": "+987456",
+    "room": 8
+  },
+  {
+    "name": "Bob",
+    "age": 24,
+    "mobile": "+98777456",
+    "room": 5
+  }
+]
