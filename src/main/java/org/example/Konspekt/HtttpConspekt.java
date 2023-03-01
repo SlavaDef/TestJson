@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Konspekt;
 
 import java.io.IOException;
 import java.net.URI;
