@@ -17,11 +17,11 @@ public class Main {
         //createUser(user11);
        // updateUser(user11);
        // deleteUser(user11);
-       // infoAllUsers();
+        infoAllUsers();
        // getUserById("4");
        // getUserByName("Patricia Lebsack");
        // showAllOpenTasks("3");
-        showAllCommentsToPost("2");
+       // showAllCommentsToPost("2");
 
 
 
