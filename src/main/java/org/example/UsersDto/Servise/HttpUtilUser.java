@@ -1,7 +1,10 @@
-package org.example.UsersDto;
+package org.example.UsersDto.Servise;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import org.example.UsersDto.Models.User;
+import org.example.UsersDto.Models.UserPosts;
+import org.example.UsersDto.Models.UsersList;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -93,7 +96,7 @@ public class HttpUtilUser {
         System.out.println("userById = " + response.body());
     }
 
-    public void getUserByName(String userName) throws IOException, InterruptedException {
+    public static void getUserByName(String userName) throws IOException, InterruptedException {
         HttpRequest.BodyPublisher bodyPublisher = HttpRequest.BodyPublishers.noBody();
         String url = String.format("https://jsonplaceholder.typicode.com/users?username=%s", userName);
         HttpResponse<String> response = getResponse(url,"GET",bodyPublisher);

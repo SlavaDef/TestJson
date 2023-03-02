@@ -1,4 +1,4 @@
-package org.example.UsersDto;
+package org.example.UsersDto.Models;
 
 public class UsersList {
 

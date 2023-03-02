@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65bfd8c1-e274-4586-887c-69e23a0f9ef1" name="Changes" comment="" />
+    <list default="true" id="65bfd8c1-e274-4586-887c-69e23a0f9ef1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/Models/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/Models/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/Models/Geo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Konspekt/TestAbUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/HttpUtilUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/Servise/HttpUtilUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/UserPosts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/Models/UserPosts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/UsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UsersDto/Models/UsersList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,13 +52,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestAbUser">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HtttpConspekt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.HtttpConspekt" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Konspekt.HtttpConspekt" />
       <module name="TestJson" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.UsersDto.*" />
+          <option name="PATTERN" value="org.example.UsersDto.Models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,21 +67,21 @@
       </method>
     </configuration>
     <configuration name="JsoupIpi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JsoupIpi" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Konspekt.JsoupIpi" />
       <module name="TestJson" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="JsoupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JsoupTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Konspekt.JsoupTest" />
       <module name="TestJson" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAbUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.TestAbUser" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.UsersDto.Main" />
       <module name="TestJson" />
       <extension name="coverage">
         <pattern>
@@ -81,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.TestJson" />
+    <configuration name="TestAbUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Konspekt.TestAbUser" />
       <module name="TestJson" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.UsersDto.*" />
+          <option name="PATTERN" value="org.example.UsersDto.Models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestAbUser" />
         <item itemvalue="Application.HtttpConspekt" />
         <item itemvalue="Application.JsoupIpi" />
         <item itemvalue="Application.JsoupTest" />
-        <item itemvalue="Application.TestJson" />
       </list>
     </recent_temporary>
   </component>

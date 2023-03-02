@@ -1,6 +1,7 @@
 package org.example.Konspekt;
 
 import com.google.gson.Gson;
+import org.example.UsersDto.Models.User;
 
 import java.io.IOException;
 import java.net.URI;
@@ -13,7 +14,7 @@ public class HttpUtil {
 private static final HttpClient CLIENT = HttpClient.newHttpClient(); // зробили Http кліента
     private static final Gson GSON = new Gson();
 
-    public static  User sendGet(URI uri) throws IOException, InterruptedException {
+    public static User sendGet(URI uri) throws IOException, InterruptedException {
         // робимо отправку запроса
 
         HttpRequest request = HttpRequest.newBuilder()
