@@ -62,7 +62,7 @@ public class HttpUtilUser {
         System.out.println("response.statusCode() = " + response.body());
         return GSON.fromJson((String) response.body(),User.class);
     }
-    public static User infoAllUsers() throws IOException, InterruptedException {
+    public static List<User> infoAllUsers() throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://jsonplaceholder.typicode.com/users"))
                 .GET()
