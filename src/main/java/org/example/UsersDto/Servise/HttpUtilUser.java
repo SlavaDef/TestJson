@@ -18,7 +18,7 @@ import java.util.List;
 
 public class HttpUtilUser {
 
-    private static final HttpClient CLIENT = HttpClient.newHttpClient(); // зробили Http кліента
+    private static final HttpClient CLIENT = HttpClient.newHttpClient();
     private static final Gson GSON = new Gson();
 
     public static HttpResponse<String> getResponse(String url,String method,HttpRequest.BodyPublisher body) throws IOException,InterruptedException{
@@ -103,7 +103,7 @@ public class HttpUtilUser {
         System.out.println("userByName = " + response.body());
     }
 
-    public void showAllOpenTasks(String id) throws IOException, InterruptedException{
+    public static void showAllOpenTasks(String id) throws IOException, InterruptedException{
         HttpRequest.BodyPublisher bodyPublisher = HttpRequest.BodyPublishers.noBody();
         String url = String.format("https://jsonplaceholder.typicode.com/users/%s/todos",id);
         HttpResponse<String> response = getResponse(url,"GET",bodyPublisher);
@@ -115,7 +115,7 @@ public class HttpUtilUser {
             }
         }
     }
-    public void showAllCommentsToPost(String id) throws IOException, InterruptedException{
+    public static void showAllCommentsToPost(String id) throws IOException, InterruptedException{
         HttpRequest.BodyPublisher bodyPublisher = HttpRequest.BodyPublishers.noBody();
         String url = String.format("https://jsonplaceholder.typicode.com/users/%s/posts",id);
         HttpResponse<String> response = getResponse(url,"GET",bodyPublisher);
@@ -127,6 +127,5 @@ public class HttpUtilUser {
         System.out.println("response1.body() = " + allPosts.body());
         GSON.toJson(allPosts.body(), new FileWriter(String.format("user-%s-post-%s-comments.json",id,lastPost)));
     }
-
 }
 
