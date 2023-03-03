@@ -44,7 +44,7 @@ public class HttpUtilUser {
     public static User updateUser(User user) throws IOException, InterruptedException {
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://jsonplaceholder.typicode.com/users"))
+                .uri(URI.create("https://jsonplaceholder.typicode.com/users" + user.getId()))
                 .PUT(HttpRequest.BodyPublishers.ofString(GSON.toJson(user)))
                 .build();
         HttpResponse <String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
