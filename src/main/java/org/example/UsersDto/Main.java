@@ -1,13 +1,8 @@
 package org.example.UsersDto;
 
 import org.example.UsersDto.Models.User;
-import org.example.UsersDto.Servise.HttpUtilUser;
-
 import java.io.IOException;
-
-import static org.example.UsersDto.Servise.HttpUtilUser.*;
 import static org.example.UsersDto.Servise.HttpUtilUser.getUserByName;
-
 public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException {
