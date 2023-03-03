@@ -5,7 +5,6 @@ import com.google.gson.reflect.TypeToken;
 import org.example.UsersDto.Models.User;
 import org.example.UsersDto.Models.UserPosts;
 import org.example.UsersDto.Models.UsersList;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
