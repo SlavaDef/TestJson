@@ -77,21 +77,18 @@ public class HttpUtilUser {
        // return GSON.fromJson((String) response.body(),User.class);
 
     }
-
     public static void getUserById(String id) throws IOException, InterruptedException {
         HttpRequest.BodyPublisher bodyPublisher = HttpRequest.BodyPublishers.noBody();
         String url = String.format("https://jsonplaceholder.typicode.com/users/%s", id);
         HttpResponse<String> response = getResponse(url,"GET",bodyPublisher);
         System.out.println("userById = " + response.body());
     }
-
     public static void getUserByName(String userName) throws IOException, InterruptedException {
         HttpRequest.BodyPublisher bodyPublisher = HttpRequest.BodyPublishers.noBody();
         String url = String.format("https://jsonplaceholder.typicode.com/users?username={username}"+ userName);
         HttpResponse<String> response = getResponse(url,"GET",bodyPublisher);
         System.out.println("userByName = " + response.body());
     }
-
     public static void showAllOpenTasks(String id) throws IOException, InterruptedException{
         HttpRequest.BodyPublisher bodyPublisher = HttpRequest.BodyPublishers.noBody();
         String url = String.format("https://jsonplaceholder.typicode.com/users/%s/todos",id);
