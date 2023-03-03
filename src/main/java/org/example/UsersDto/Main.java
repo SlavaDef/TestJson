@@ -13,13 +13,14 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
         User user11 = new User();
+        user11.setId("5");
 
         //createUser(user11);
        // updateUser(user11);
        // deleteUser(user11);
-        infoAllUsers();
+        //infoAllUsers();
        // getUserById("4");
-       // getUserByName("Patricia Lebsack");
+        getUserByName("Ervin Howell");
        // showAllOpenTasks("3");
        // showAllCommentsToPost("2");
 

@@ -44,7 +44,7 @@ public class HttpUtilUser {
     public static User updateUser(User user) throws IOException, InterruptedException {
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://jsonplaceholder.typicode.com/users/5"))
+                .uri(URI.create("https://jsonplaceholder.typicode.com/users"))
                 .PUT(HttpRequest.BodyPublishers.ofString(GSON.toJson(user)))
                 .build();
         HttpResponse <String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
@@ -87,7 +87,7 @@ public class HttpUtilUser {
 
     public static void getUserByName(String userName) throws IOException, InterruptedException {
         HttpRequest.BodyPublisher bodyPublisher = HttpRequest.BodyPublishers.noBody();
-        String url = String.format("https://jsonplaceholder.typicode.com/users?username=%s", userName);
+        String url = String.format("https://jsonplaceholder.typicode.com/users?username={username}"+ userName);
         HttpResponse<String> response = getResponse(url,"GET",bodyPublisher);
         System.out.println("userByName = " + response.body());
     }
