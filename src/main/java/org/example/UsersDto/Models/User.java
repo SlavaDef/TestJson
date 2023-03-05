@@ -75,5 +75,15 @@ public class User {
         this.website = website;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", company=" + company +
+                '}';
+    }
 }
 

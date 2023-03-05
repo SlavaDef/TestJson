@@ -13,11 +13,11 @@ public class Main {
         user11.setId("5");
 
         //createUser(user11);
-        updateUser(user11);
+        //updateUser(user11);
        // deleteUser(user11);
         //infoAllUsers();
        // getUserById("4");
-       // getUserByName("Ervin Howell");
+        getUserByName("Ervin Howell");
        // showAllOpenTasks("3");
        // showAllCommentsToPost("2");
 
