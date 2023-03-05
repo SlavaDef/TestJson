@@ -1,11 +1,9 @@
 package org.example.Module10Examples;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 class FunctionInterfaceTest {
     // задача посчитать сколько букв в каждом ємейле
@@ -16,7 +14,8 @@ class FunctionInterfaceTest {
     public static void main(String[] args) {
 
         //  Function интерфейс принимающий один тип данных i конвертирующий его в другой
-System.out.println("Before");
+
+         System.out.println("Before");
         Function<Integer,Double> function = value -> value * 0.2; // лямда приходит значение инт умножено на 0.2
 // лямді як би отложенні дії
 
@@ -47,23 +46,21 @@ consumer.accept(calculateLetters(emails, value -> value.length()));
 
     }
 
-    //  робимо метод мапу для підрахунку
 
+    //  робимо метод мапу для підрахунку
     private static Map<String,Integer> calculateLetters(List<String> emails, Function<String,Integer> function){
         Map<String,Integer> res = new HashMap<>();
        for (String email : emails){
       // res.put(email, email.length());
        res.put(email, function.apply(email));
 }
-
-
 return  res;
     }
 
     private static Map<String,Integer> calculateLetters2(List<String> emails){
         Map<String,Integer> res = new HashMap<>();
         for (String email : emails) {
-            res.put(email, email.length());
+            res.put(email, email.length()); // теж саме можна одразу підрахувати в методі
         }
 
 
