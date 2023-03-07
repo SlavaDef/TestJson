@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bfd8c1-e274-4586-887c-69e23a0f9ef1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/BinaryOperatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/LinkToMethod/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/LinkToMethod/EmployeeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/LinkToMethod/MethodReferenses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/LinkToMethod/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/SupplierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bot/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bot/CurrencyBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bot/CurrencyRateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bot/CurrencyRatePrivatResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bot/CurrencyRertrievalPrivatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bot/CurrencyRertrievalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bot/PrettyRateResponseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/LinkToMethod/StreemDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/FunctionInterfaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Module10Examples/FunctionInterfaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,7 +56,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MethodReferenses">
+  <component name="RunManager" selected="Application.StreemDemo">
     <configuration name="BinaryOperatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Module10Examples.BinaryOperatorTest" />
       <module name="TestJson" />
@@ -94,6 +96,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StreemDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Module10Examples.LinkToMethod.StreemDemo" />
+      <module name="TestJson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Module10Examples.LinkToMethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SupplierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Module10Examples.SupplierTest" />
       <module name="TestJson" />
@@ -107,26 +122,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLiamda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Module10Examples.TestLiamda" />
-      <module name="TestJson" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Module10Examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreemDemo" />
         <item itemvalue="Application.MethodReferenses" />
         <item itemvalue="Application.BinaryOperatorTest" />
         <item itemvalue="Application.SupplierTest" />
         <item itemvalue="Application.FunctionInterfaceTest" />
-        <item itemvalue="Application.TestLiamda" />
       </list>
     </recent_temporary>
   </component>
