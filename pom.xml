@@ -27,7 +27,11 @@
             <version>1.18.26</version>
             <scope>provided</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots</artifactId>
+            <version>6.3.0</version>
+        </dependency>
     </dependencies>
 
     <properties>

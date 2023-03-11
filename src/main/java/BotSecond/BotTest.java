@@ -7,6 +7,6 @@ public class BotTest {
     public static void main(String[] args) throws IOException {
 
 
-        new CurrencyRetvievalService().getCurencyRates();
+       System.out.println( " Ansver is " + new CurrencyRetvievalPrivatService().getCurencyRates());
     }
 }

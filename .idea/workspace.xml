@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bfd8c1-e274-4586-887c-69e23a0f9ef1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/BotTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRatePrivatResponceDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRetvievalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurencyBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRetvievalPrivatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRetvievalervice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/Currency.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/CurrencyBot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/CurrencyRateDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/CurrencyRatePrivatResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/CurrencyRertrievalPrivatService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/CurrencyRertrievalService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/PrettyRateResponseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotSecond/BotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotSecond/BotTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRatePrivatResponceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRatePrivatResponceDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRetvievalService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -58,6 +55,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="BotSecond" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.BotTest">
     <configuration name="BinaryOperatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Module10Examples.BinaryOperatorTest" />
