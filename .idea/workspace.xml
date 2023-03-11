@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bfd8c1-e274-4586-887c-69e23a0f9ef1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SimpleBot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/Enums/BankName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/Enums/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/dto/CurrencyRateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/dto/CurrencyRateMonoResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/dto/CurrencyRatePrivatResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/servises/CurrencyRetrievalMonoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/servises/CurrencyRetrievalPrivatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/servises/CurrencyRetrievalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/servises/PrettyRateResponseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/servises/RateComparingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SupperBot/servises/RateOperationsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotSecond/servise/CurrencyRetvievalPrivatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotSecond/servise/CurrencyRetvievalPrivatService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
