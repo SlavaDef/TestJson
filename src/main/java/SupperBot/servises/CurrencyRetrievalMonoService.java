@@ -3,12 +3,11 @@ package SupperBot.servises;
 
 import SupperBot.Enums.BankName;
 import SupperBot.Enums.Currency;
-import SupperBot.dto.CurrencyRateDto;
-import SupperBot.dto.CurrencyRateMonoResponseDto;
+import SupperBot.dto.CurrencyRateDto2;
+import SupperBot.dto.CurrencyRateMonoResponseDto2;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.jsoup.Jsoup;
-
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.List;
@@ -29,17 +28,17 @@ public class CurrencyRetrievalMonoService implements CurrencyRetrievalService {
     );
 
     @Override
-    public List<CurrencyRateDto> getCurrencyRates() {
+    public List<CurrencyRateDto2> getCurrencyRates() {
         try {
             String response = Jsoup.connect(URL).ignoreContentType(true).get().body().text();
-            List<CurrencyRateMonoResponseDto> currencyRateResponses = convertResponseToList(response);
+            List<CurrencyRateMonoResponseDto2> currencyRateResponses = convertResponseToList(response);
             return currencyRateResponses.stream()
                     .filter(item -> codeCurr.containsKey(item.getCurrencyCodeA())
                             && codeCurr.containsKey(item.getCurrencyCodeB())
                             && item.getCurrencyCodeB().equals(980)
                     )
                     // тепер додаю назву банку щоб потім зрозуміті курс якого банку був найвигіднішим
-                    .map(item -> new CurrencyRateDto(
+                    .map(item -> new CurrencyRateDto2(
                             codeCurr.get(item.getCurrencyCodeA()),
                             item.getRateBuy(),
                             item.getRateSell(),
@@ -51,8 +50,8 @@ public class CurrencyRetrievalMonoService implements CurrencyRetrievalService {
         }
     }
 
-    private List<CurrencyRateMonoResponseDto> convertResponseToList(String response) {
-        Type type = TypeToken.getParameterized(List.class, CurrencyRateMonoResponseDto.class).getType();
+    private List<CurrencyRateMonoResponseDto2> convertResponseToList(String response) {
+        Type type = TypeToken.getParameterized(List.class, CurrencyRateMonoResponseDto2.class).getType();
         Gson gson = new Gson();
         return gson.fromJson(response, type);
     }

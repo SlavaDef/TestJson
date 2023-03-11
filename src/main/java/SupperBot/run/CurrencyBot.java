@@ -8,18 +8,20 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.awt.*;
+
 public class CurrencyBot extends TelegramLongPollingBot {
 
     private RateOperationsService rateOperationsService = new RateOperationsService();
 
     @Override
     public String getBotUsername() {
-        return "додайте свій";
+        return "NewExange66Bot";
     }
 
     @Override
     public String getBotToken() {
-        return "додайте свій";
+        return "6231081451:AAF-ZNYrCqNtKkNbLo-cBFS0bnauL6OrYaE";
     }
 
     // accepted commands: buy, sell, usd, eur
@@ -49,7 +51,7 @@ public class CurrencyBot extends TelegramLongPollingBot {
         if (currency != null) {
             return PrettyRateResponseService.formBestRateResponse(rateOperationsService.getBestRates(currency));
         } else {
-            return PrettyRateResponseService.formAllRateResponse(command, rateOperationsService.getActualRates());
+            return PrettyRateResponseService.formAllRateResponse(command,  rateOperationsService.getActualRates());
         }
     }
 }

@@ -1,12 +1,9 @@
 package SupperBot.servises;
 
 import SupperBot.Enums.Currency;
-import SupperBot.dto.CurrencyRateDto;
+import SupperBot.dto.CurrencyRateDto2;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class RateComparingService {
@@ -19,20 +16,20 @@ public class RateComparingService {
 
     // відповідь буде мапа формату
     // {"sell": currencyRateDto, "buy": currencyRateDto}
-    public Map<String, CurrencyRateDto> getBestRates(Currency currency) {
-        List<CurrencyRateDto> rates = getActualRates().stream()
+    public Map<String, CurrencyRateDto2> getBestRates(Currency currency) {
+        List<CurrencyRateDto2> rates = getActualRates().stream()
                 // залишити тільки потрібну валюту
                 .filter(item -> currency.equals(item.getCurrency()))
                 .collect(Collectors.toList());
 
         // отримання курсу купівлі: (найбільший = найкращій)
-        CurrencyRateDto buyRate = rates.stream()
-                .max(Comparator.comparing(CurrencyRateDto::getBuyRate))
+        CurrencyRateDto2 buyRate = rates.stream()
+                .max(Comparator.comparing(CurrencyRateDto2::getBuyRate))
                 .get();
 
         // отримання курсу продажу: (найменший = найкращій)
-        CurrencyRateDto sellRate = rates.stream()
-                .min(Comparator.comparing(CurrencyRateDto::getSellRate))
+        CurrencyRateDto2 sellRate = rates.stream()
+                .min(Comparator.comparing(CurrencyRateDto2::getSellRate))
                 .get();
 
         // збираю мапу відповідей
@@ -42,7 +39,7 @@ public class RateComparingService {
         );
     }
 
-    private List<CurrencyRateDto> getActualRates(){
+    private List<CurrencyRateDto2> getActualRates(){
         return retrievalServices.stream()
                 .map(CurrencyRetrievalService::getCurrencyRates)
                 .flatMap(Collection::stream)

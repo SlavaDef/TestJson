@@ -1,12 +1,10 @@
 package SupperBot.servises;
 
-
-
-import BotSecond.Dto.CurrencyRateDto;
-
+import SupperBot.dto.CurrencyRateDto2;
 import java.util.List;
+
 
 public interface CurrencyRetrievalService {
 
-        List<CurrencyRateDto> getCurrencyRates();
+        List<CurrencyRateDto2> getCurrencyRates();
 }

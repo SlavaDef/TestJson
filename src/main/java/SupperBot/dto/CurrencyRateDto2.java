@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class CurrencyRateDto {
+public class CurrencyRateDto2 {
     private Currency currency;
     private BigDecimal buyRate;
     private BigDecimal sellRate;

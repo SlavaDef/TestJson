@@ -1,12 +1,9 @@
 package SupperBot.servises;
 
-import SupperBot.Enums.Currency;
-import SupperBot.dto.CurrencyRateDto;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import SupperBot.Enums.Currency;
+import SupperBot.dto.CurrencyRateDto2;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class RateOperationsService {
@@ -18,7 +15,7 @@ public class RateOperationsService {
     );
 
     // дістати інфо по всім відомим валютам з усіх банків
-    public List<CurrencyRateDto> getActualRates(){
+    public List<CurrencyRateDto2> getActualRates(){
         return retrievalServices.stream()
                 .map(CurrencyRetrievalService::getCurrencyRates)
                 .flatMap(Collection::stream)
@@ -26,21 +23,21 @@ public class RateOperationsService {
     }
 
     // отримати найвигідніші курси заданої валюти
-    public Map<String, CurrencyRateDto> getBestRates(Currency currency) {
-        List<CurrencyRateDto> rates = getActualRates();
+    public Map<String, CurrencyRateDto2> getBestRates(Currency currency) {
+        List<CurrencyRateDto2> rates = getActualRates();
         rates = rates.stream()
                 // залишити тільки потрібну валюту
                 .filter(item -> currency.equals(item.getCurrency()))
                 .collect(Collectors.toList());
 
         // отримання курсу купівлі: (найбільший = найкращій)
-        CurrencyRateDto buyRate = rates.stream()
-                .max(Comparator.comparing(CurrencyRateDto::getBuyRate))
+        CurrencyRateDto2 buyRate = rates.stream()
+                .max(Comparator.comparing(CurrencyRateDto2::getBuyRate))
                 .get();
 
         // отримання курсу продажу: (найменший = найкращій)
-        CurrencyRateDto sellRate = rates.stream()
-                .min(Comparator.comparing(CurrencyRateDto::getBuyRate))
+        CurrencyRateDto2 sellRate = rates.stream()
+                .min(Comparator.comparing(CurrencyRateDto2::getBuyRate))
                 .get();
 
         // збираю мапу відповідей

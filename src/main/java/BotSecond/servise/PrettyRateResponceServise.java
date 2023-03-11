@@ -2,6 +2,7 @@ package BotSecond.servise;
 
 import BotSecond.Dto.CurrencyRateDto;
 
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -11,7 +12,7 @@ public class PrettyRateResponceServise {
 
     // клас буде відповідати за гарне виведення валюти приймає команду Buy чи Sell і сет відповіді
 
-    public static String formResponce(String comand, Set<CurrencyRateDto> rates){
+    public static String formResponce(String comand, List<CurrencyRateDto> rates){
         comand = comand.toUpperCase();
         String res;
 switch (comand){

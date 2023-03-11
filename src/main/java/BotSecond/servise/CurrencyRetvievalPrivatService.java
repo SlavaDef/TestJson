@@ -15,7 +15,7 @@ public class CurrencyRetvievalPrivatService implements CurrencyRetvievalervice {
     // силка на курси в ip Privat
     private static final String URL = "https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=11";
     @Override
-    public Set<CurrencyRateDto> getCurencyRates()  {
+    public List<CurrencyRateDto> getCurencyRates()  {
 
      try {
          String responce = Jsoup.connect(URL)
@@ -23,12 +23,12 @@ public class CurrencyRetvievalPrivatService implements CurrencyRetvievalervice {
                  .get()
                  .body()
                  .text();
-         Set<CurrencyRatePrivatResponceDto> responceDto = convertResponceToSet(responce);
+         List<CurrencyRatePrivatResponceDto> responceDto = convertResponceToSet(responce);
 
          // new CurrencyRateDto(dto.getCcy(), dto.getBuy(), dto.getSale()))
        return  responceDto.stream()
                  .map(dto -> new CurrencyRateDto(dto.getCcy(),dto.getBuy(), dto.getSale()))
-                 .collect(Collectors.toSet());
+                 .collect(Collectors.toList());
      }
      catch (IOException e){
         throw  new RuntimeException(e);
@@ -36,7 +36,7 @@ public class CurrencyRetvievalPrivatService implements CurrencyRetvievalervice {
 
     }
 
-    private Set<CurrencyRatePrivatResponceDto> convertResponceToSet(String responce){
+    private List<CurrencyRatePrivatResponceDto> convertResponceToSet(String responce){
         // робимо тайп токен для того щоб витягнути список обьектів
         Type type = TypeToken.getParameterized(Set.class, CurrencyRatePrivatResponceDto.class).getType();
         Gson gson = new Gson();
