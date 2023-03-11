@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bfd8c1-e274-4586-887c-69e23a0f9ef1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurencyBot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRetvievalPrivatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRetvievalervice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BotSecond/PrettyRateResponceServise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BotSecond/BotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotSecond/BotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRatePrivatResponceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRatePrivatResponceDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BotSecond/CurrencyRetvievalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotSecond/CurencyBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotSecond/CurencyBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
