@@ -1,5 +1,6 @@
-package BotSecond;
+package BotSecond.Dto;
 
+import BotSecond.Dto.Currency;
 import lombok.Getter;
 import lombok.Setter;
 

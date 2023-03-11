@@ -1,4 +1,6 @@
-package BotSecond;
+package BotSecond.servise;
+
+import BotSecond.Dto.CurrencyRateDto;
 
 import java.util.Set;
 

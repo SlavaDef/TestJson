@@ -1,5 +1,8 @@
-package BotSecond;
+package BotSecond.BotRun;
 
+import BotSecond.servise.CurrencyRetvievalPrivatService;
+import BotSecond.servise.CurrencyRetvievalervice;
+import BotSecond.servise.PrettyRateResponceServise;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;

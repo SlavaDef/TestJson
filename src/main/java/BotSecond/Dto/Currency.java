@@ -1,4 +1,4 @@
-package BotSecond;
+package BotSecond.Dto;
 
 public enum Currency {
 

@@ -70,11 +70,11 @@
       </method>
     </configuration>
     <configuration name="BotTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BotSecond.BotTest" />
+      <option name="MAIN_CLASS_NAME" value="BotSecond.BotRun.BotTest" />
       <module name="TestJson" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BotSecond.*" />
+          <option name="PATTERN" value="BotSecond.servise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
