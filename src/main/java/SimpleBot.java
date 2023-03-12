@@ -47,7 +47,7 @@ public class SimpleBot extends TelegramLongPollingBot {
                     //System.out.println(message.getText());
                     break;
                 case "Налаштування":
-                    
+
                     //sendMsg(message, "Налаштування");
                     //System.out.println(message.getText());
 
